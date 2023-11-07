@@ -101,7 +101,7 @@
         "[concat('Microsoft.App/managedEnvironments/', parameters('containerAppEnvironmentName'))]"
       ],
       "properties": {
-        "environmentId": "[concat('/subscriptions/e65bd8ac-d28a-4218-a4bd-167c32a0a1f7/resourceGroups/expresshello8427/providers/Microsoft.App/managedEnvironments/', parameters('containerAppEnvironmentName'))]",
+        "environmentId": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'),'/providers/Microsoft.App/managedEnvironments/', parameters('containerAppEnvironmentName'))]",
         "configuration": {
           "secrets": [],
           "registries": [],
