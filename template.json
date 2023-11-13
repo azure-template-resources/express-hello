@@ -10,7 +10,7 @@
     },
     "workspaceName": {
       "type": "string",
-      "defaultValue": "[format('workspace{0}{1}', parameters('resourceGroupName'), guid(resourceGroup().id))]"
+      "defaultValue": "[format('workspace{0}', parameters('resourceGroupName')]"
     },
     "workspaceSku": {
       "type": "object",
@@ -47,15 +47,15 @@
     },
     "OidcRbacNameToContainerAppEnvironment": {
       "type": "string",
-      "defaultValue": "uniqueString(resourceGroup().id))]"
+      "defaultValue": "[uniqueString(resourceGroup().id)]"
     },
     "OidcRbacNameToContainerApp": {
       "type": "string",
-      "defaultValue": "[uniqueString(resourceGroup().id))]"
+      "defaultValue": "[uniqueString(resourceGroup().id)]"
     },
     "OidcRbacNameToContainerRegistry": {
       "type": "string",
-      "defaultValue": "[uniqueString(resourceGroup().id))]"
+      "defaultValue": "[uniqueString(resourceGroup().id)]"
     }
   },
   "variables": {},
