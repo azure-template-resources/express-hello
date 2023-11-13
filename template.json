@@ -10,7 +10,7 @@
     },
     "workspaceName": {
       "type": "string",
-      "defaultValue": "workspaceexpresshello842786c9"
+      "defaultValue": "[format('workspace{0}{1}', parameters('resourceGroupName'), guid(resourceGroup().id))]"
     },
     "workspaceSku": {
       "type": "object",
@@ -47,15 +47,15 @@
     },
     "OidcRbacNameToContainerAppEnvironment": {
       "type": "string",
-      "defaultValue": "[guid(resourceGroup().id)]"
+      "defaultValue": "uniqueString(resourceGroup().id))]"
     },
     "OidcRbacNameToContainerApp": {
       "type": "string",
-      "defaultValue": "[guid(resourceGroup().id)]"
+      "defaultValue": "[uniqueString(resourceGroup().id))]"
     },
     "OidcRbacNameToContainerRegistry": {
       "type": "string",
-      "defaultValue": "[guid(resourceGroup().id)]"
+      "defaultValue": "[uniqueString(resourceGroup().id))]"
     }
   },
   "variables": {},
