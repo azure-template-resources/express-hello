@@ -47,15 +47,15 @@
     },
     "OidcRbacNameToContainerAppEnvironment": {
       "type": "string",
-      "defaultValue": "[uniqueString(resourceGroup().id)]"
+      "defaultValue": "[guid(resourceGroup().id, 'containerAppEnvironment')]"
     },
     "OidcRbacNameToContainerApp": {
       "type": "string",
-      "defaultValue": "[uniqueString(resourceGroup().id)]"
+      "defaultValue": "[guid(resourceGroup().id, 'containerApp')]"
     },
     "OidcRbacNameToContainerRegistry": {
       "type": "string",
-      "defaultValue": "[uniqueString(resourceGroup().id)]"
+      "defaultValue": "[guid(resourceGroup().id, 'containerRegistry')]"
     }
   },
   "variables": {},
