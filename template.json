@@ -30,7 +30,7 @@
     },
     "containerAppIngress": {
       "type": "object",
-      "defaultValue": { "external": true, "targetPort": 80 }
+      "defaultValue": { "external": true, "targetPort": 3000 }
     },
     "repoUrl": { "type": "string" },
     "repo": { "type": "string" },
